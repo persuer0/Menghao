@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Menghao Yin | Embodied Intelligence &amp; Robot Learning</title>
+  <meta name="description" content="Menghao Yin's academic portfolio: world models, vision-language-action policies, robot learning, research experience, and the ICRA 2026 ManipDojo Challenge championship.">
+  <meta property="og:title" content="Menghao Yin | Embodied Intelligence & Robot Learning">
+  <meta property="og:description" content="Research in world models and vision-language-action policies, from predictive representations to real-world robot manipulation.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navigation page-width" aria-label="Main navigation">
+      <a class="wordmark" href="#about" aria-label="Menghao Yin, home"><span class="monogram" aria-hidden="true">MY<span>.</span></span><span class="wordmark-note">Academic portfolio</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#workshop">Workshop</a>
+        <a href="#entrepreneurship">Entrepreneurship</a>
+        <a class="nav-contact" href="mailto:myin132@connect.hkust-gz.edu.cn">Contact <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page-width">
+    <section id="about" class="hero" aria-labelledby="name">
+      <div class="hero-copy">
+        <p class="eyebrow">Embodied intelligence &amp; robot learning</p>
+        <h1 id="name">Menghao Yin<span class="preferred-name"> / Harmon</span></h1>
+        <p class="hero-statement">Learning to predict.<br>Learning to act.</p>
+        <p class="hero-bio">I study <strong>world models</strong> and <strong>vision-language-action policies</strong> for robot manipulation. My work connects predictive representation learning with policy training, evaluation, and deployment on real robots.</p>
+        <a class="email-link" href="mailto:myin132@connect.hkust-gz.edu.cn">myin132@connect.hkust-gz.edu.cn <span aria-hidden="true">↗</span></a>
+        <div class="research-interests" aria-label="Research interests"><span>World models</span><span>Vision-language-action</span><span>Reinforcement learning</span></div>
+      </div>
+      <figure class="portrait">
+        <img src="images/portrait.jpg" alt="Portrait of Menghao Yin" width="460" height="510" fetchpriority="high">
+        <figcaption>Prediction, planning &amp; control.</figcaption>
+      </figure>
+    </section>
+
+    <aside class="highlight" aria-label="Research highlights">
+      <span class="eyebrow">Highlights</span>
+      <p><a href="#workshop"><strong>ICRA 2026</strong> · ManipDojo Challenge champion</a><span class="highlight-divider" aria-hidden="true">/</span><a href="https://arxiv.org/abs/2610.21922" target="_blank" rel="noopener noreferrer"><strong>TS-WAM</strong> · Read the preprint <span aria-hidden="true">↗</span></a></p>
+    </aside>
+
+    <section id="research" class="section-layout" aria-labelledby="research-heading">
+      <header class="section-heading"><span class="section-index">01 / RESEARCH</span><h2 id="research-heading">Selected<br>research</h2><p>Predictive representations.<br>Purposeful actions.</p></header>
+      <div class="section-content">
+        <p class="section-intro">Learning from video, modeling visual dynamics, and translating predictions into reliable robot behavior.</p>
+
+        <article class="paper" aria-labelledby="ts-wam-heading">
+          <div class="paper-topline"><span class="topic">Vision-language-action · Video learning</span><span class="status">ICRA 2027 · Under review</span></div>
+          <div class="paper-grid">
+            <figure class="paper-visual"><a href="images/papers/TS-WAM.png" class="zoom-image" data-caption="TS-WAM — temporal latent actions and world-action coupling" aria-label="Enlarge the TS-WAM method overview"><img src="images/papers/TS-WAM.png" alt="TS-WAM teacher-student framework coupling temporal latent action learning, future visual prediction, and robot action generation" width="2204" height="1296" loading="lazy"><span class="zoom-label" aria-hidden="true">Method overview ↗</span></a></figure>
+            <div class="paper-copy"><h3 id="ts-wam-heading">TS-WAM</h3><p class="paper-title">Temporal Latent Actions and World-Action Coupling for Vision-Language Robot Control</p><p>A teacher-student world-action model that learns temporal latent actions from robot demonstrations and action-free human videos, coupling future visual prediction with action generation.</p><p class="paper-evidence">Evaluated on LIBERO, LIBERO-Plus, SimplerEnv, and real-world Franka Research 3 and RevoTron manipulation.</p><div class="paper-links"><a class="text-link" href="https://arxiv.org/abs/2610.21922" target="_blank" rel="noopener noreferrer">arXiv: 2610.21922 <span aria-hidden="true">↗</span></a><span class="paper-date">Jun–Sep 2026</span></div></div>
+          </div>
+          <details class="research-details"><summary>Method &amp; findings <span aria-hidden="true">+</span></summary><div><p>The VLM-JEPA framework uses an exponential moving average (EMA) target branch to learn temporal latent actions. Delta-LWM predicts future visual features that guide action generation. Temporal representations, visual dynamics, and control are optimized jointly without separate latent-action or world-model pretraining.</p><p>Experiments show improved generalization and robustness across simulated benchmarks and real robots. The EMA target branch is removed at inference.</p></div></details>
+        </article>
+
+        <article class="paper" aria-labelledby="drift-heading">
+          <div class="paper-topline"><span class="topic">World models · Long-horizon planning</span><span class="status">AAAI 2027 · Under review</span></div>
+          <div class="paper-grid">
+            <figure class="paper-visual"><a href="images/papers/Drift-JEPA.png" class="zoom-image" data-caption="Drift-JEPA — drift-aware predictive world modeling" aria-label="Enlarge the Drift-JEPA method overview"><img src="images/papers/Drift-JEPA.png" alt="Drift-JEPA architecture with a drift risk estimator and recovery training for action-conditioned latent predictions" width="1310" height="686" loading="lazy"><span class="zoom-label" aria-hidden="true">Method overview ↗</span></a></figure>
+            <div class="paper-copy"><h3 id="drift-heading">Drift-JEPA</h3><p class="paper-title">Drift-Aware Joint-Embedding Predictive World Models for Long-Horizon Visual Planning</p><p>Addresses compounding error in autoregressive world models through context- and action-conditioned drift risk estimation, structured perturbations, and recovery training.</p><p class="paper-evidence">Improves latent prediction and goal-conditioned planning across six manipulation and navigation tasks in MetaWorld, Push-T, and Wall.</p><p class="paper-date">Jun–Aug 2026</p></div>
+          </div>
+          <details class="research-details"><summary>Method &amp; findings <span aria-hidden="true">+</span></summary><div><p>During training, action-conditioned latent world models receive clean encoder features; during planning, they repeatedly consume their own predictions. This mismatch accumulates drift over long horizons.</p><p>Drift-JEPA stores observed drift at different prediction horizons in a replay buffer. A drift risk estimator identifies vulnerable features, and structured perturbations train the predictor to recover from drifted inputs. Drift-specific components are removed after training, preserving the original model and planner at inference.</p></div></details>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-layout" aria-labelledby="experience-heading">
+      <header class="section-heading"><span class="section-index">02 / EXPERIENCE</span><h2 id="experience-heading">Embodied AI<br>in practice</h2><p>From demonstrations<br>to real-world deployment.</p></header>
+      <div class="section-content">
+        <article class="experience-entry" aria-labelledby="internship-heading">
+          <div class="entry-header"><div><p class="topic">Research &amp; Development</p><h3 id="internship-heading">Yuanxing Guangnian Technology</h3><p class="entry-role">AI Algorithm Intern</p></div><p class="entry-date"><time datetime="2026-01-01">Jan 2026</time> — <time datetime="2026-04-01">Apr 2026</time></p></div>
+          <p>Worked across the robot learning pipeline: teleoperation data collection, model training and inference, policy comparison, and deployment on <strong>Franka Research 3</strong>.</p>
+          <ul class="contributions"><li>Deployed and validated <strong>Isaac-GR00T</strong> and <strong>Openpi π0.5</strong> on real hardware.</li><li>Reproduced <strong>Diffusion Policy</strong> using the mentor’s codebase; independently reproduced <strong>VITA</strong> and <strong>ManiFlow</strong>.</li><li>Deployed <strong>DreamZero</strong> and evaluated zero-shot performance and LoRA fine-tuning.</li></ul>
+          <div class="media-heading"><h4>Real-world manipulation</h4><span>Selected deployment demonstrations</span></div>
+          <div class="demo-grid">
+            <figure class="demo"><video controls playsinline preload="none" poster="images/posters/pen-insertion.jpg" aria-label="Robot pen insertion demonstration"><source src="videos/internship/pen-insertion.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/internship/pen-insertion.mp4">Watch the demonstration.</a></video><figcaption><span class="demo-number">01</span><span>Pen insertion<span class="demo-description">Placing a pen into a holder.</span></span></figcaption></figure>
+            <figure class="demo"><video controls playsinline preload="none" poster="images/posters/bowl-stacking.jpg" aria-label="Robot bowl stacking demonstration"><source src="videos/internship/bowl-stacking.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/internship/bowl-stacking.mp4">Watch the demonstration.</a></video><figcaption><span class="demo-number">02</span><span>Bowl stacking<span class="demo-description">Stacking bowls on a tabletop.</span></span></figcaption></figure>
+            <figure class="demo"><video controls playsinline preload="none" poster="images/posters/phone-placement.jpg" aria-label="Robot phone placement demonstration"><source src="videos/internship/phone-placement.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/internship/phone-placement.mp4">Watch the demonstration.</a></video><figcaption><span class="demo-number">03</span><span>Phone placement<span class="demo-description">Positioning a phone on a stand.</span></span></figcaption></figure>
+            <figure class="demo"><video controls playsinline preload="none" poster="images/posters/conveyor-picking.jpg" aria-label="Robot conveyor picking demonstration"><source src="videos/internship/conveyor-picking.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/internship/conveyor-picking.mp4">Watch the demonstration.</a></video><figcaption><span class="demo-number">04</span><span>Conveyor picking<span class="demo-description">Picking objects from a moving conveyor.</span></span></figcaption></figure>
+          </div>
+        </article>
+        <article class="experience-entry" aria-labelledby="air-heading">
+          <div class="entry-header"><div><p class="topic">Institute for AI Industry Research (AIR), Tsinghua University</p><h3 id="air-heading">Embodied AI Intensive Program</h3><p class="entry-role">Program Participant · Wuxi</p></div><p class="entry-date"><time datetime="2025-01-18">Jan 18</time> — <time datetime="2025-02-28">Feb 28, 2025</time></p></div>
+          <p>Explored vision-language planning with <strong>Qwen2-VL-72B-Instruct</strong> and cross-embodiment control across wheeled and quadruped robot platforms.</p>
+          <ul class="contributions"><li>Developed a <strong>ROS client control system</strong> for language-guided robot execution.</li><li>Built a quadruped <strong>URDF model</strong> and configured <strong>MuJoCo</strong> environments for simulation validation of reinforcement learning control.</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="workshop" class="section-layout" aria-labelledby="workshop-heading">
+      <header class="section-heading"><span class="section-index">03 / WORKSHOP</span><h2 id="workshop-heading">Workshop</h2><p>Policy evaluation<br>&amp; reinforcement learning.</p></header>
+      <div class="section-content">
+        <article class="workshop-entry" aria-labelledby="manipdojo-heading">
+          <div class="workshop-heading"><p class="topic">ICRA 2026 Workshop Competition</p><span class="award-label">1st Place</span></div>
+          <h3 id="manipdojo-heading">ManipDojo Challenge</h3>
+          <p class="workshop-meta">Team RoboThinker <span aria-hidden="true">·</span> Vienna, Austria <span aria-hidden="true">·</span> <time datetime="2026-06-05">June 5, 2026</time></p>
+          <div class="workshop-grid">
+            <div><p>Our team won the ManipDojo Challenge with the <strong>highest score on the RoboTwin 2.0 benchmark</strong>.</p><h4>My contribution</h4><ul class="contributions"><li>Evaluated <strong>StarVLA</strong>, <strong>InternVLA</strong>, and other robot policies on <strong>RoboTwin 2.0</strong>.</li><li>Performed <strong>reinforcement learning post-training</strong> to improve policy performance.</li></ul><p class="workshop-context">Hosted at the Multi-Agent Robotic Systems: Real-World Collaboration and Interaction Workshop.</p></div>
+            <figure class="certificate"><a href="images/workshop/ManipDojo.png" class="zoom-image" data-caption="Team RoboThinker — ICRA 2026 ManipDojo Challenge, 1st Place Award" aria-label="View the ManipDojo Challenge first-place certificate"><img src="images/workshop/ManipDojo.png" alt="ICRA 2026 ManipDojo Challenge first-place certificate awarded to Team RoboThinker, listing Menghao Yin" width="1440" height="944" loading="lazy"><span class="zoom-label" aria-hidden="true">View certificate ↗</span></a><figcaption>Official certificate · Team RoboThinker</figcaption></figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="entrepreneurship" class="section-layout" aria-labelledby="entrepreneurship-heading">
+      <header class="section-heading"><span class="section-index">04 / ENTREPRENEURSHIP</span><h2 id="entrepreneurship-heading">Ideas<br>into practice</h2><p>Robotics for<br>everyday assistance.</p></header>
+      <div class="section-content">
+        <article class="venture" aria-labelledby="venture-heading">
+          <div class="entry-header"><div><p class="topic">The inaugural Xiaohongshu Hackathon Grand Finale</p><h3 id="venture-heading">TRI_ME</h3><p class="venture-tagline">“Free up the last three minutes.”</p></div><p class="entry-date"><time datetime="2026-04-07">Apr 7</time>–<time datetime="2026-04-10">10, 2026</time></p></div>
+          <div class="venture-grid"><div><p>A robotic personal-care prototype built in a <strong>72-hour development sprint</strong>. Using a seven-degree-of-freedom robotic arm, the team demonstrated assistance with hair drying, shaving, and toothbrushing.</p><p class="venture-role"><strong>My role</strong><br>Algorithm development and real-world deployment.</p><p class="venture-result">Third Prize · Hardware Track<span>RMB 20,000 team prize</span></p></div><figure class="demo"><video controls playsinline preload="none" poster="images/posters/tri-me.jpg" aria-label="TRI_ME seven-degree-of-freedom robotic arm personal-care prototype demonstration"><source src="videos/venture/tri-me.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/venture/tri-me.mp4">Watch the project demonstration.</a></video><figcaption>TRI_ME <span class="demo-description">Personal-care assistance with a 7-DoF arm.</span></figcaption></figure></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-heading"><div><p class="eyebrow">Get in touch</p><h2 id="contact-heading">Let’s talk robot learning.</h2></div><a class="text-link" href="mailto:myin132@connect.hkust-gz.edu.cn">myin132@connect.hkust-gz.edu.cn <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="page-width site-footer"><p>© 2026 Menghao Yin</p><p>Embodied intelligence · World models · Robot learning</p><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
+
+  <dialog class="image-dialog" aria-labelledby="image-caption"><div class="dialog-toolbar"><p id="image-caption"></p><button type="button" class="dialog-close" aria-label="Close image preview">Close <span aria-hidden="true">×</span></button></div><div class="dialog-image-container"><img id="dialog-image" alt=""></div></dialog>
+</body>
+</html>

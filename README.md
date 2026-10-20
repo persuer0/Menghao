@@ -15,7 +15,7 @@ Open <http://127.0.0.1:8080>. The page also works by opening `index.html` direct
 ## Content
 
 - **Profile:** Red Bird MPhil in Robotics and Autonomous Systems at HKUST(GZ), Fall 2026 entry; academic advisor Renjing Xu; research interests in Joint-Embedding Predictive Architectures (JEPA) and World-Action Models (WAM).
-- **Research:** TS-WAM, with its [arXiv preprint](https://arxiv.org/abs/2610.21922), and Drift-JEPA. Submission statuses are carried over from the source portfolio and are explicitly labeled as under review.
+- **Research:** TS-WAM, with its [arXiv preprint](https://arxiv.org/abs/2610.21922) and supplementary video, and Drift-JEPA. Submission statuses are carried over from the source portfolio and are explicitly labeled as under review.
 - **Experience:** AI algorithm internship at Yuanxing Guangnian Technology, with four real-robot demonstrations; the Tsinghua AIR embodied AI intensive program, focused on vision-language planning and simulation.
 - **Workshop:** Team RoboThinker’s first-place finish in the ICRA 2026 Workshop Competition, ManipDojo Challenge; individual policy evaluation and reinforcement learning post-training contributions; official certificate.
 - **Entrepreneurship:** TRI_ME, a robotic personal-care prototype developed during the inaugural Xiaohongshu Hackathon Grand Finale, including the hardware-track third prize and team prize money.
@@ -34,6 +34,7 @@ The portfolio intentionally excludes undergraduate education history, earlier pe
 - `images/posters/`: pre-generated video thumbnails.
 - `videos/internship/`: browser-compatible H.264/AAC demonstrations.
 - `videos/venture/tri-me.mp4`: browser-compatible hackathon demonstration.
+- `videos/research/TS-WAM-pre.mp4`: TS-WAM supplementary video, converted from the supplied HEVC source to H.264/AAC with fast-start playback.
 
 Research figures and the certificate open in a keyboard-accessible dialog; Escape closes it and returns focus to the originating link. Without JavaScript, the links open the full images directly. Videos load only when requested. System fonts and local assets keep the core page independent of third-party services.
 

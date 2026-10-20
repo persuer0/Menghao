@@ -42,6 +42,10 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 h1 { font: normal clamp(36px, 4.5vw, 53px)/1.2 var(--serif); letter-spacing: -1.8px; }
 .preferred-name { display: inline-block; color: var(--muted); font: 14px var(--sans); letter-spacing: 0; margin-left: 8px; }
 .hero-statement { font: italic 28px/1.4 var(--serif); color: var(--blue); margin-top: 23px; }
+.academic-profile { margin-top: 24px; padding-left: 14px; border-left: 2px solid #cbd7e0; font-size: 12px; color: var(--muted); line-height: 1.85; }
+.academic-profile .affiliation { color: var(--blue); font-weight: 600; font-size: 13px; }
+.university-logo { display: block; width: min(100%, 370px); margin-top: 25px; }
+.university-logo img { height: auto; }
 .hero-bio { max-width: 635px; margin-top: 21px; font-size: 15px; color: #4c555d; line-height: 1.85; }
 .email-link { display: inline-block; margin-top: 18px; font-size: 13px; text-decoration: none; overflow-wrap: anywhere; }
 .email-link span { margin-left: 8px; }
@@ -186,6 +190,10 @@ body.preview-open { overflow: hidden; }
   .portrait { grid-column: 2; grid-row: 1 / 4; }
   .hero-statement { grid-column: 1; margin-top: 0; }
   .hero-bio, .email-link, .research-interests { grid-column: 1 / -1; margin-top: 0; }
+  .academic-profile, .university-logo { grid-column: 1 / -1; margin-top: 0; }
+  .academic-profile { font-size: 11px; }
+  .academic-profile .affiliation { font-size: 12px; }
+  .university-logo { width: min(100%, 330px); }
   .email-link { font-size: 12px; }
   .research-interests { gap: 6px 12px; }
   .research-interests span { font-size: 9px; }

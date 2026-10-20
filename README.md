@@ -14,12 +14,13 @@ Open <http://127.0.0.1:8080>. The page also works by opening `index.html` direct
 
 ## Content
 
+- **Profile:** Red Bird MPhil in Robotics and Autonomous Systems at HKUST(GZ), Fall 2026 entry; academic advisor Renjing Xu; research interests in Joint-Embedding Predictive Architectures (JEPA) and World-Action Models (WAM).
 - **Research:** TS-WAM, with its [arXiv preprint](https://arxiv.org/abs/2610.21922), and Drift-JEPA. Submission statuses are carried over from the source portfolio and are explicitly labeled as under review.
 - **Experience:** AI algorithm internship at Yuanxing Guangnian Technology, with four real-robot demonstrations; the Tsinghua AIR embodied AI intensive program, focused on vision-language planning and simulation.
 - **Workshop:** Team RoboThinker’s first-place finish in the ICRA 2026 Workshop Competition, ManipDojo Challenge; individual policy evaluation and reinforcement learning post-training contributions; official certificate.
 - **Entrepreneurship:** TRI_ME, a robotic personal-care prototype developed during the inaugural Xiaohongshu Hackathon Grand Finale, including the hardware-track third prize and team prize money.
 
-The portfolio intentionally excludes education history, earlier personal competition results, and embedded-systems projects. The portrait is a face-only crop to exclude identifying clothing, event signage, and competition hardware. Only selected assets are reused; the source repository and its Git history are not copied.
+The portfolio intentionally excludes undergraduate education history, earlier personal competition results, and embedded-systems projects. The portrait is a face-only crop to exclude identifying clothing, event signage, and competition hardware. Only selected assets are reused; the source repository and its Git history are not copied.
 
 ## Files
 
@@ -29,6 +30,7 @@ The portfolio intentionally excludes education history, earlier personal competi
 - `images/papers/`: research method figures.
 - `images/workshop/ManipDojo.png`: the original workshop certificate.
 - `images/portrait.jpg`: cropped portrait, without the original image or its metadata.
+- `images/hkust-gz-logo.png`: the supplied HKUST(GZ) logo.
 - `images/posters/`: pre-generated video thumbnails.
 - `videos/internship/`: browser-compatible H.264/AAC demonstrations.
 - `videos/venture/tri-me.mp4`: browser-compatible hackathon demonstration.
@@ -37,6 +39,10 @@ Research figures and the certificate open in a keyboard-accessible dialog; Escap
 
 ## Publishing
 
-This is an independent local Git repository. No remote is configured. To publish later, create a remote repository, push the site, and configure GitHub Pages to serve the repository root. Relative asset paths support both a user site and a project site. `.nojekyll` allows GitHub Pages to serve the files as a plain static site.
+Local repository: `/Users/harmon/code/Menghao`.
+
+Remote: <https://github.com/persuer0/Menghao.git>.
+
+GitHub Pages URL: <https://persuer0.github.io/Menghao/>. Configure Pages to deploy from the `main` branch and repository root (`/`). Relative asset paths support project-site deployment. `.nojekyll` allows GitHub Pages to serve the files as a plain static site.
 
 Update paper statuses manually as review decisions become available. No accepted-publication status or numerical benchmark score is inferred.

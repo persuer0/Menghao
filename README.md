@@ -20,7 +20,7 @@ Open <http://127.0.0.1:8080>. The page also works by opening `index.html` direct
 - **Workshop:** Team RoboThinker’s first-place finish in the ICRA 2026 Workshop Competition, ManipDojo Challenge; individual policy evaluation and reinforcement learning post-training contributions; official certificate.
 - **Entrepreneurship:** TRI_ME, a robotic personal-care prototype developed during the inaugural Xiaohongshu Hackathon Grand Finale, including the hardware-track third prize and team prize money.
 
-The portfolio intentionally excludes undergraduate education history, earlier personal competition results, and embedded-systems projects. The portrait is a face-only crop to exclude identifying clothing, event signage, and competition hardware. Only selected assets are reused; the source repository and its Git history are not copied.
+The portfolio intentionally excludes undergraduate education history, earlier personal competition results, and embedded-systems projects. The portrait uses the supplied Menghao Yin photo. Only selected assets are reused; the source repository and its Git history are not copied.
 
 ## Files
 
@@ -29,7 +29,7 @@ The portfolio intentionally excludes undergraduate education history, earlier pe
 - `js/main.js`: mobile navigation, active section links, accessible native image dialog, and video playback coordination.
 - `images/papers/`: research method figures.
 - `images/workshop/ManipDojo.png`: the original workshop certificate.
-- `images/portrait.jpg`: cropped portrait, without the original image or its metadata.
+- `images/portrait.png`: the supplied Menghao Yin portrait, displayed at its original aspect ratio.
 - `images/hkust-gz-logo.png`: the supplied HKUST(GZ) logo.
 - `images/posters/`: pre-generated video thumbnails.
 - `videos/internship/`: browser-compatible H.264/AAC demonstrations.
